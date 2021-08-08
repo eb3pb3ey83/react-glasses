@@ -4,7 +4,6 @@ import { useTranslation } from 'react-i18next'
 // import { useTranslation } from 'react-i18next'
 import LanguageButton from 'src/shared/components/LanguageButton'
 import ResetPassword from 'src/shared/components/ResetPassword'
-import LogoSrc from 'src/assets/img/logo.png'
 import Form from './components/Form'
 import useStyles from './useStyles'
 
@@ -16,9 +15,7 @@ const Login: React.FC = () => {
   return (
     <div className={classes.container}>
       <ResetPassword open={open} onClose={() => setOpen(false)} disableBackdropClick />
-      <div className={classes.background}>
-        <img className={classes.logo} src={LogoSrc} alt='' />
-      </div>
+      <div className={classes.background}></div>
       <div className={classes.formContainer}>
         <LanguageButton className={`${classes.languageButton} langBtn`} />
         <div className={classes.form}>

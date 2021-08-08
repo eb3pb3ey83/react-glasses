@@ -1,5 +1,4 @@
 import { makeStyles } from '@material-ui/core'
-import loginBackground from 'src/assets/img/login.jpg'
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -26,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: theme.variables.fontSizeSm,
   },
   background: {
-    background: `center / cover no-repeat url(${loginBackground})`,
+    background: '#777',
   },
   logo: {
     width: '133px',

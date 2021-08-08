@@ -4,7 +4,6 @@ import List from '@material-ui/core/List'
 import { NavLink, useLocation, useRouteMatch } from 'react-router-dom'
 import { MenuInfo, Props } from './model'
 import IconToImg from '../IconDecide/IconToImg'
-import HeaderMenuLogo from 'src/assets/icon/header-menu-logo.svg'
 import classNames from 'classnames'
 import arrowUpIcon from '../../../assets/icon/arrow-up-icon.svg'
 import arrowDownIcon from '../../../assets/icon/arrow-down-icon.svg'
@@ -89,9 +88,7 @@ const Menu: React.FC<Props> = ({ menuData }: Props) => {
 
   const drawer = (
     <>
-      <div className={classes.toolbar}>
-        <img className='menuLogo' src={HeaderMenuLogo} alt='' />
-      </div>
+      <div className={classes.toolbar}></div>
       {(menuArray && menuArray.length === 0) || !menuArray ? (
         <Loading />
       ) : (
