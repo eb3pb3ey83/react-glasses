@@ -1,0 +1,32 @@
+import { Machine } from 'xstate'
+import Context from './context'
+import Schema from './schema'
+import { Events } from './event'
+import { EventType } from './eventType'
+import { actions } from './action'
+
+const machine = Machine<Context, Schema, Events>({
+  context: {
+    alertMessage: { title: '', content: '', isDicidedMode: false },
+    hasQueryPermission: false,
+    hasUpdatePermission: false,
+  },
+  initial: 'alertClosed',
+  states: {
+    alertClosed: {
+      on: {
+        [EventType.OPEN_ALERT]: {
+          target: 'alertOpened',
+          actions: actions.openAlert,
+        },
+      },
+    },
+    alertOpened: {
+      on: {
+        [EventType.CLOSE_ALERT]: 'alertClosed',
+      },
+    },
+  },
+})
+
+export default machine

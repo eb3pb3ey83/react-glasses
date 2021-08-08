@@ -1,0 +1,13 @@
+export type AccountOrder =
+  | 'user_name_ch'
+  | '-user_name_ch'
+  | 'user_name_en'
+  | '-user_name_en'
+  | 'email'
+  | '-email'
+  | 'dept_id'
+  | '-dept_id'
+  | 'open_flag'
+  | '-open_flag'
+  | 'created_time'
+  | '-created_time'

@@ -1,0 +1,5 @@
+export enum EventType {
+  OPEN_CREATOR = 'OPEN_CREATOR',
+  OPEN_EDITOR = 'OPEN_EDITOR',
+  CLOSE_DRAWER = 'CLOSE_DRAWER',
+}

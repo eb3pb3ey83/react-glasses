@@ -1,0 +1,2 @@
+(this["webpackJsonpbtox-new"]=this["webpackJsonpbtox-new"]||[]).push([[39],{590:function(t,e,n){"use strict";n.r(e);n(0);var s=n(3);e.default=function(){return Object(s.jsx)(s.Fragment,{children:"home"})}}}]);
+//# sourceMappingURL=39.f969f82a.chunk.js.map
